@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectwalaa | Academic Projects Simplified</title>
+  <meta name="description" content="Projectwalaa - Find academic projects, source code and documentation for B.Tech, M.Tech, BCA, MCA, MBA and more.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <span class="brand-icon">🎓</span>
+      <span><b>Project<span>walaa</span></b><small>Academic Projects Simplified</small></span>
+    </a>
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#categories">Categories</a>
+      <a href="#submit">Submit Project</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="login">Login</button>
+      <button class="register">Register</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">ACADEMIC PROJECT PLATFORM</p>
+      <h1>Find the Best <strong>Academic Projects</strong> for Your Success</h1>
+      <p class="hero-text">Explore final year projects, mini projects, source code, documentation and ideas for B.Tech, M.Tech, BCA, MCA, MBA and more.</p>
+      <div class="search">
+        <span>⌕</span>
+        <input id="searchInput" type="text" placeholder="Search projects (e.g. Python, Java, ML, Web, MBA...)">
+        <button onclick="searchProjects()">Search</button>
+      </div>
+      <div class="popular"><b>Popular:</b> <span>Python</span><span>Java</span><span>Machine Learning</span><span>Android</span><span>MBA</span><span>Data Science</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="student-card">
+        <div class="circle">💡</div><b>Innovative<br>Projects</b>
+      </div>
+      <div class="students">👩‍💻 👨‍💻 👩‍🎓 👨‍💻</div>
+      <div class="laptop">💻</div>
+      <div class="student-card right">
+        <div class="circle">📚</div><b>Source Code<br>+ Documentation</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="categories" class="section">
+  <div class="container">
+    <div class="section-head"><div><h2>Project Categories</h2><p>Choose projects based on your course and technology.</p></div><a href="#">View All Categories →</a></div>
+    <div class="categories">
+      <div class="category">🎓<b>B.Tech</b></div><div class="category">⚙️<b>M.Tech</b></div><div class="category">💻<b>MCA</b></div>
+      <div class="category">⌨️<b>BCA</b></div><div class="category">📊<b>MBA</b></div><div class="category">🌐<b>Web Development</b></div>
+      <div class="category">🐍<b>Python Projects</b></div><div class="category">☕<b>Java Projects</b></div><div class="category">🧠<b>AI / ML</b></div><div class="category">🗄️<b>Data Science</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-head"><div><h2>Featured Projects</h2><p>Explore popular academic projects and ideas.</p></div><a href="#">View All Projects →</a></div>
+    <div id="projectGrid" class="project-grid"></div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="container">
+    <h2>How Projectwalaa Works</h2>
+    <div class="steps">
+      <div><i>🔎</i><b>1. Search Project</b><p>Find projects based on your branch and technology.</p></div>
+      <div><i>📄</i><b>2. View Details</b><p>Check abstract, modules, features and documentation.</p></div>
+      <div><i>⬇️</i><b>3. Download / Use</b><p>Get project resources for your academic needs.</p></div>
+      <div><i>🎓</i><b>4. Learn & Grow</b><p>Improve your skills and build a better career.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="submit" class="submit">
+  <div class="container submit-box">
+    <div><p class="eyebrow">FOR STUDENTS & DEVELOPERS</p><h2>Have a Project to Share?</h2><p>Submit your academic project and help other students learn from your work.</p></div>
+    <button>Submit Your Project →</button>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <div class="container">
+    <h2>What Students Say</h2>
+    <div class="testimonial-grid">
+      <article>★★★★★<p>“Projectwalaa helped me complete my final year project with proper documentation and source code.”</p><b>Rahul S.</b><small>B.Tech Student</small></article>
+      <article>★★★★★<p>“Great collection of real-world projects. Very useful for academic learning.”</p><b>Priya M.</b><small>MCA Student</small></article>
+      <article>★★★★★<p>“The project resources saved me a lot of time and helped me understand the implementation.”</p><b>Amit K.</b><small>MBA Student</small></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="newsletter">
+  <div class="container"><h2>Stay Updated with New Projects</h2><p>Get new project ideas and updates in your inbox.</p><form onsubmit="subscribe(event)"><input type="email" required placeholder="Enter your email"><button>Subscribe</button></form></div>
+</section>
+</main>
+
+<footer id="blog">
+  <div class="container footer-grid">
+    <div><div class="brand footer-brand"><span class="brand-icon">🎓</span><span><b>Project<span>walaa</span></b><small>Academic Projects Simplified</small></span></div><p>Projectwalaa is a platform for students to explore and learn academic projects with source code, documentation and guidance.</p></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#projects">Projects</a><a href="#categories">Categories</a><a href="#submit">Submit Project</a></div>
+    <div><h4>Popular Categories</h4><a href="#">B.Tech Projects</a><a href="#">MCA Projects</a><a href="#">Python Projects</a><a href="#">AI/ML Projects</a></div>
+    <div><h4>Contact Us</h4><p>projectwalaa@gmail.com</p><p>+91 XXXXX XXXXX</p><p>India</p><div class="social">in &nbsp; ◎ &nbsp; ▶ &nbsp; f</div></div>
+  </div>
+  <div class="copyright">© 2026 Projectwalaa. All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
